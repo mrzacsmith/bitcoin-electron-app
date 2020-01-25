@@ -48,6 +48,19 @@ function createWindow() {
           }
         }
       ]
+    },
+    {
+      label: "Info",
+      submenu: [
+        { label: "More info" },
+        { type: "separator" },
+        {
+          label: "LinkedIn",
+          click() {
+            shell.openExternal("https://www.linkedin.com/in/mrzacsmith/");
+          }
+        }
+      ]
     }
   ]);
 
