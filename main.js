@@ -16,9 +16,9 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  win.loadFile("index.html");
+  win.loadFile("src/index.html");
 
-  // Open the DevTools.
+  // Open the DevTools. Not used, so commented out
   // win.webContents.openDevTools();
 
   // Emitted when the window is closed.
