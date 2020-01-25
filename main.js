@@ -1,4 +1,5 @@
 const { app, BrowserWindow, Menu } = require("electron");
+const shell = require("electron").shell;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -33,7 +34,13 @@ function createWindow() {
       label: "Menu",
       submenu: [
         { label: "Adjust Notification Value" },
-        { label: "CoinMarketCap" },
+        {
+          label: "CoinMarketCap",
+          click() {
+            shell.openExternal("https://coinmarketcap.com/");
+          }
+        },
+        { type: "separator" },
         {
           label: "Exit",
           click() {
