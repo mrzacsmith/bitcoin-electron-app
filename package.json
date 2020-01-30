@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/mrzacsmith/bitcoin-electron-app#readme",
   "devDependencies": {
-    "electron": "^7.1.9"
+    "electron": "^7.1.9",
+    "electron-reload": "^1.5.0"
   },
   "dependencies": {
     "axios": "^0.19.2"

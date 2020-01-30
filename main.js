@@ -1,5 +1,6 @@
 const { app, BrowserWindow, Menu } = require("electron");
 const shell = require("electron").shell;
+require("electron-reload")(__dirname);
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
