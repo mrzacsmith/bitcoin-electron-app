@@ -36,7 +36,7 @@ setInterval(getBTC, 30000);
 
 notifyBtn.addEventListener("click", function(event) {
   const modalPath = path.join("./", __dirname, "add.html");
-  // const modalPath = `file:///home/silverback/Documents/Projects/electron/bitcoin-app/src/add.html`;
+
   let win = new BrowserWindow({
     frame: false,
     transparent: true,
